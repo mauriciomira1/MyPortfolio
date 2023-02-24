@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="style-header.css">
+  <link rel="stylesheet" href="../src/styles.css">
   <script src="main.js" defer></script>
 
   <!-- Links of icons -->
@@ -47,18 +47,37 @@
         <div class="menu-container">
           <ul>
             <li><span class="material-symbols-outlined" id="menu-icon">lightbulb</span><span>Notas</span></li>
-            <li><span class="material-symbols-outlined" id="menu-icon">notifications</span><span>Lembretes</span>
-            </li>
-            <li><span class="material-symbols-outlined" id="menu-icon">edit</span><span>Editar marcadores</span>
-            </li>
+            <li><span class="material-symbols-outlined" id="menu-icon">notifications</span><span>Lembretes</span></li>
+            <li><span class="material-symbols-outlined" id="menu-icon">edit</span><span>Editar marcadores</span></li>
             <li><span class="material-symbols-outlined" id="menu-icon">archive</span><span>Arquivo</span></li>
             <li><span class="material-symbols-outlined" id="menu-icon">delete</span><span>Lixeira</span></li>
           </ul>
         </div>
         <div class="notes-grid">
           <div class="new-note-container">
-            <input type="text" name="" id="new-note-text" placeholder="Criar uma nota...">
-            <span class="material-symbols-outlined">add</span>
+            <div class="new-title">
+              <input type="text" placeholder="Título">
+              <span class="material-symbols-outlined">attach_file</span>
+            </div>
+            <div class="new-note-item">
+              <input type="text" name="" id="new-note-text" placeholder="Criar uma nota...">
+              <div class="new-note-item-icons">
+                <span class="material-symbols-outlined">check_box</span>
+                <span class="material-symbols-outlined">brush</span>
+                <span class="material-symbols-outlined">image</span>
+              </div>
+            </div>
+            <div class="new-note-container-icons">
+              <span class="material-symbols-outlined">add_alert</span>
+              <span class="material-symbols-outlined">person_add</span>
+              <span class="material-symbols-outlined">palette</span>
+              <span class="material-symbols-outlined">image</span>
+              <span class="material-symbols-outlined">archive</span>
+              <span class="material-symbols-outlined">more_vert</span>
+              <span class="material-symbols-outlined">undo</span>
+              <span class="material-symbols-outlined">redo</span>
+
+            </div>
           </div>
           <div class="notes-itens"></div>
         </div>

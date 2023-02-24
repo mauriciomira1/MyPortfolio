@@ -60,6 +60,10 @@ a {
   align-items: center;
 }
 
+#menu-icon:hover {
+  background-color: transparent;
+}
+
 .menu-container {
   display: flex;
   align-items: center;
@@ -68,10 +72,10 @@ a {
 
 .menu-container li {
   /*   background-color: rgb(247, 228, 166); */
-  padding: 2px 120px 2px 14px;
+  padding: 1px 140px 1px 14px;
   border-radius: 0 40px 40px 0;
   font-size: 0.8em;
-  font-weight: bolder;
+  font-weight: bold;
   box-sizing: border-box;
   color: #202124;
   display: flex;
@@ -80,7 +84,7 @@ a {
 }
 
 .menu-container span {
-  margin-left: 20px;
+  margin-left: 10px;
   margin-top: 5px;
 }
 
@@ -125,20 +129,41 @@ a {
 
 .notes-grid {
   width: 100%;
+  height: 400px;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .new-note-container {
   background-color: white;
-  padding: 10px 15px;
+  padding: 2px 15px;
   border-radius: 6px;
-  height: 25px;
   transition: box-shadow 0.1s;
-  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.233);
+  box-shadow: 0px 1px 3px 2px rgba(0, 0, 0, 0.144);
+  width: 580px;
+  margin-top: 20px;
+  justify-content: space-between;
+}
+
+.new-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.new-title input {
+  font-size: 1.1em;
+}
+
+.new-note-item {
   display: flex;
   align-items: center;
-  margin-top: 20px;
+  justify-content: space-between;
+}
+
+#new-note-text {
+  width: 75%;
 }
 
 .new-note-container input {
@@ -148,13 +173,15 @@ a {
   padding: 3px auto;
 }
 
+.new-note-container-icons {}
+
 .new-note-container input:focus {
   outline: none;
   background-color: white;
 }
 
 .new-note-container:focus-within {
-  box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.486);
+  box-shadow: 0px 2px 4px 2px rgba(0, 0, 0, 0.219);
   background-color: white;
 }
 
