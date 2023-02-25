@@ -1,5 +1,5 @@
 // Creating variables 
-const newTitle = document.querySelector('.new-title')
+const newTitle = document.querySelector('new-title')
 const newTitleInput = document.getElementById('new-title-input')
 const newNoteText = document.getElementById('new-note-text')
 const newNoteContainer = document.getElementById('new-note-container')
@@ -37,10 +37,10 @@ function addNewNote() {
   if (newTitleInput.value !== '' || newNoteText.value !== '') {
     const note = newNoteContainer.cloneNode(true)
     notesItens.appendChild(note)
-    cleanInputs
+    cleanInputs()
   } else {
     changeContainerNew
-    cleanInputs
+    cleanInputs()
   }
 }
 
