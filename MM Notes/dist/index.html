@@ -8,7 +8,7 @@
   <title>Document</title>
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="../src/styles.css">
-  <script src="main.js" defer></script>
+  <script src="../src/index.js" defer></script>
 
   <!-- Links of icons -->
   <link rel="stylesheet"
@@ -54,20 +54,20 @@
           </ul>
         </div>
         <div class="notes-grid">
-          <div class="new-note-container">
-            <div class="new-title">
-              <input type="text" placeholder="Título">
+          <div class="new-note-container" id="new-note-container">
+            <div class="new-title" id="new-title">
+              <input type="text" placeholder="Título" id="new-title-input">
               <span class="material-symbols-outlined">attach_file</span>
             </div>
-            <div class="new-note-item">
+            <div class="new-note-item" id="new-note-item">
               <input type="text" name="" id="new-note-text" placeholder="Criar uma nota...">
-              <div class="new-note-item-icons">
+              <div class="new-note-item-icons" id="new-note-item-icons">
                 <span class="material-symbols-outlined">check_box</span>
                 <span class="material-symbols-outlined">brush</span>
                 <span class="material-symbols-outlined">image</span>
               </div>
             </div>
-            <div class="new-note-container-icons">
+            <div class="new-note-container-icons" id="new-note-container-icons">
               <span class="material-symbols-outlined">add_alert</span>
               <span class="material-symbols-outlined">person_add</span>
               <span class="material-symbols-outlined">palette</span>
@@ -76,15 +76,14 @@
               <span class="material-symbols-outlined">more_vert</span>
               <span class="material-symbols-outlined">undo</span>
               <span class="material-symbols-outlined">redo</span>
-
+              <button id="new-note-container-button-close">Fechar</button>
             </div>
           </div>
-          <div class="notes-itens"></div>
+          <div class="notes-itens" id="notes-itens"></div>
         </div>
       </div>
     </main>
   </div>
-
 </body>
 
 </html>
