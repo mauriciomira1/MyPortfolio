@@ -9,6 +9,12 @@
   cursor: pointer;
 }
 
+
+.hidden {
+  /* Classe genérica, para ocultar elementos dinamicamente */
+  display: none;
+}
+
 .material-symbols-outlined:hover {
   background-color: rgba(77, 77, 77, 0.096);
   transition: 0.1s;

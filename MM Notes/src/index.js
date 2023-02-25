@@ -1,13 +1,14 @@
 // Creating variables 
-const newTitle = document.getElementById('new-title')
+const newTitle = document.querySelector('.new-title')
 const newTitleInput = document.getElementById('new-title-input')
 const newNoteText = document.getElementById('new-note-text')
 const newNoteContainer = document.getElementById('new-note-container')
 const newNoteIcons = document.getElementById('new-note-container-icons')
-const newNoteItemIcons = document.getElementById('new-note-item-icons')
+const newNoteItemIcons = document.getElementById('new-shortnote-item-icons')
 const btnCloseNewNote = document.getElementById('new-note-container-button-close')
 const notesItens = document.getElementById('notes-itens')
 const newNoteItem = document.getElementById('new-note-item')
+
 
 
 // Starting functions area
@@ -27,15 +28,19 @@ function changeContainerNew(ev) {
 function cleanInputs() {
   newTitleInput.value = ''
   newNoteText.value = ''
+  newTitle.style.display = 'none'
+  newNoteIcons.style.display = 'none'
+  newNoteItemIcons.style.display = 'none'
 }
 
 function addNewNote() {
   if (newTitleInput.value !== '' || newNoteText.value !== '') {
     const note = newNoteContainer.cloneNode(true)
     notesItens.appendChild(note)
-    cleanInputs()
+    cleanInputs
   } else {
     changeContainerNew
+    cleanInputs
   }
 }
 
