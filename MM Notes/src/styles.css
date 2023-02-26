@@ -9,8 +9,7 @@
   cursor: pointer;
 }
 
-
-.hidden {
+.hide {
   /* Classe genérica, para ocultar elementos dinamicamente */
   display: none;
 }
@@ -157,8 +156,11 @@ a {
 }
 
 .new-title {
-  display: none;
   justify-content: space-between;
+}
+
+#new-title {
+  display: none;
 }
 
 
@@ -176,6 +178,7 @@ a {
   width: 75%;
 }
 
+/* CSS para o container de criar novas notas */
 .new-note-container input {
   background-color: white;
   border: none;
@@ -183,15 +186,30 @@ a {
   padding: 3px auto;
 }
 
-.new-note-container-icons {
-  display: none;
-  gap: 10px
-}
-
 .new-note-container-icons span {
   font-size: 1.2em;
 }
 
+.new-note-container input:focus {
+  outline: none;
+  background-color: white;
+}
+
+.new-note-container:focus-within {
+  box-shadow: 0px 2px 4px 2px rgba(0, 0, 0, 0.219);
+  background-color: white;
+  transition: box-shadow 1s ease;
+}
+
+.new-note-container-icons {
+  gap: 10px
+}
+
+#new-note-container-icons {
+  display: none;
+}
+
+/* CSS para botão de fechar o container de criar novas notas  */
 #new-note-container-button-close {
   border: none;
   background-color: transparent;
@@ -211,24 +229,52 @@ a {
   background-color: rgba(0, 0, 0, 0.096);
 }
 
-.new-note-container input:focus {
-  outline: none;
-  background-color: white;
-}
-
-.new-note-container:focus-within {
-  box-shadow: 0px 2px 4px 2px rgba(0, 0, 0, 0.219);
-  background-color: white;
-}
-
 .notes-itens {
   margin: 30px 5px;
   display: flex;
   flex-direction: column-reverse;
 }
 
+.note-container {
+  background-color: white;
+  padding: 2px 15px;
+  border-radius: 6px;
+  transition: box-shadow 0.1s;
+  box-shadow: 0px 1px 3px 2px rgba(0, 0, 0, 0.144);
+  width: 580px;
+  margin-top: 20px;
+  justify-content: space-between;
+}
 
+.note-container input {
+  background-color: white;
+  border: none;
+  width: 500px;
+  padding: 3px auto;
+}
 
+.note-container-icons span {
+  font-size: 1.2em;
+}
+
+.note-container input:focus {
+  outline: none;
+  background-color: white;
+}
+
+.note-container:focus-within {
+  box-shadow: 0px 2px 4px 2px rgba(0, 0, 0, 0.219);
+  background-color: white;
+  transition: box-shadow 1s ease;
+}
+
+.note-container:hover>#title {
+  display: flex;
+}
+
+.note-container:hover>#note-container-icons {
+  display: flex;
+}
 
 
 /* TYPICAL DEVICE BREAKPOINTS
